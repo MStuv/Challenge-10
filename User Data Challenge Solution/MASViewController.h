@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MASViewController : UIViewController
+
+/// Conform to the tableViewDataSource & tableViewDelegate
+@interface MASViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) NSArray *users;
 
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 @end

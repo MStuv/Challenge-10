@@ -31,8 +31,6 @@
     }
     
     
-    
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,5 +38,27 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.users count];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIndentifier = @"userCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIndentifier forIndexPath:indexPath];
+    
+    cell.textLabel.text = self.users[indexPath.row][USERNAME];
+    cell.detailTextLabel.text = self.users[indexPath.row][EMAIL];
+    cell.imageView.image = [UIImage imageNamed:self.users[indexPath.row][PROFILE_PICTURE]];
+    
+    
+    return cell;
+}
+
+
 
 @end
