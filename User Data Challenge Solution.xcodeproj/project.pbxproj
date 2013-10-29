@@ -21,6 +21,11 @@
 		C19D700318176CE2008FC604 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19D6FE518176CE2008FC604 /* UIKit.framework */; };
 		C19D700B18176CE2008FC604 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C19D700918176CE2008FC604 /* InfoPlist.strings */; };
 		C19D700D18176CE2008FC604 /* User_Data_Challenge_SolutionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C19D700C18176CE2008FC604 /* User_Data_Challenge_SolutionTests.m */; };
+		C19D701818176CFF008FC604 /* MASUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = C19D701718176CFF008FC604 /* MASUserData.m */; };
+		C19D701E1817716F008FC604 /* person1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C19D701A1817716F008FC604 /* person1.jpeg */; };
+		C19D701F1817716F008FC604 /* person2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C19D701B1817716F008FC604 /* person2.jpeg */; };
+		C19D70201817716F008FC604 /* person3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C19D701C1817716F008FC604 /* person3.jpg */; };
+		C19D70211817716F008FC604 /* person4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C19D701D1817716F008FC604 /* person4.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,12 @@
 		C19D700818176CE2008FC604 /* User Data Challenge SolutionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "User Data Challenge SolutionTests-Info.plist"; sourceTree = "<group>"; };
 		C19D700A18176CE2008FC604 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C19D700C18176CE2008FC604 /* User_Data_Challenge_SolutionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User_Data_Challenge_SolutionTests.m; sourceTree = "<group>"; };
+		C19D701618176CFF008FC604 /* MASUserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUserData.h; sourceTree = "<group>"; };
+		C19D701718176CFF008FC604 /* MASUserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASUserData.m; sourceTree = "<group>"; };
+		C19D701A1817716F008FC604 /* person1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person1.jpeg; sourceTree = "<group>"; };
+		C19D701B1817716F008FC604 /* person2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person2.jpeg; sourceTree = "<group>"; };
+		C19D701C1817716F008FC604 /* person3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person3.jpg; sourceTree = "<group>"; };
+		C19D701D1817716F008FC604 /* person4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person4.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +123,7 @@
 		C19D6FE718176CE2008FC604 /* User Data Challenge Solution */ = {
 			isa = PBXGroup;
 			children = (
+				C19D701918176D05008FC604 /* Model */,
 				C19D6FF018176CE2008FC604 /* MASAppDelegate.h */,
 				C19D6FF118176CE2008FC604 /* MASAppDelegate.m */,
 				C19D6FF318176CE2008FC604 /* Main.storyboard */,
@@ -126,6 +138,7 @@
 		C19D6FE818176CE2008FC604 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C19D702218177175008FC604 /* Images */,
 				C19D6FE918176CE2008FC604 /* User Data Challenge Solution-Info.plist */,
 				C19D6FEA18176CE2008FC604 /* InfoPlist.strings */,
 				C19D6FED18176CE2008FC604 /* main.m */,
@@ -150,6 +163,26 @@
 				C19D700918176CE2008FC604 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C19D701918176D05008FC604 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C19D701618176CFF008FC604 /* MASUserData.h */,
+				C19D701718176CFF008FC604 /* MASUserData.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C19D702218177175008FC604 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C19D701A1817716F008FC604 /* person1.jpeg */,
+				C19D701B1817716F008FC604 /* person2.jpeg */,
+				C19D701C1817716F008FC604 /* person3.jpg */,
+				C19D701D1817716F008FC604 /* person4.jpeg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +262,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C19D70201817716F008FC604 /* person3.jpg in Resources */,
+				C19D701E1817716F008FC604 /* person1.jpeg in Resources */,
 				C19D6FFA18176CE2008FC604 /* Images.xcassets in Resources */,
 				C19D6FEC18176CE2008FC604 /* InfoPlist.strings in Resources */,
+				C19D70211817716F008FC604 /* person4.jpeg in Resources */,
 				C19D6FF518176CE2008FC604 /* Main.storyboard in Resources */,
+				C19D701F1817716F008FC604 /* person2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +289,7 @@
 			files = (
 				C19D6FF818176CE2008FC604 /* MASViewController.m in Sources */,
 				C19D6FF218176CE2008FC604 /* MASAppDelegate.m in Sources */,
+				C19D701818176CFF008FC604 /* MASUserData.m in Sources */,
 				C19D6FEE18176CE2008FC604 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

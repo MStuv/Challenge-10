@@ -10,4 +10,6 @@
 
 @interface MASViewController : UIViewController
 
+@property (strong, nonatomic) NSArray *users;
+
 @end

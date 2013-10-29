@@ -7,6 +7,7 @@
 //
 
 #import "MASViewController.h"
+#import "MASUserData.h"
 
 @interface MASViewController ()
 
@@ -18,6 +19,20 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    /// Set NSArray property the value returned NSArray from the MASUserData Class Method users
+    self.users = [MASUserData users];
+    
+    /// Enumerate through the dictionaries in the users array to capture desired data
+    for (NSMutableDictionary *user in self.users) {
+        
+        /// use the object keys from the current dictionary to print out the users data.
+        NSLog(@"\nUsername:%@, Email: %@, Password: %@, Age: %@, ProfilePicture: %@", user[USERNAME], user[EMAIL], user[PASSWORD], user[AGE], user[PROFILE_PICTURE]);
+    }
+    
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
